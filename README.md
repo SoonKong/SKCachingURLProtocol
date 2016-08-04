@@ -17,5 +17,5 @@
   3. There is no step 3.
 
 
-  # NOTE: It's make from RNCachingURLProtocol. For more details see
+  NOTE: It's make from RNCachingURLProtocol. For more details see
      https://github.com/rnapier/RNCachingURLProtocol
