@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YTp-BO-uNt">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="saM-Aj-YZl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-Xz-TUS">
+                                <rect key="frame" x="160" y="0.0" width="160" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="qV7-zL-Pap"/>
+                                </constraints>
+                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-OF-Xbx">
+                                <rect key="frame" x="0.0" y="113" width="320" height="455"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eRd-OF-Xbx" secondAttribute="trailing" id="2JM-78-4In"/>
+                            <constraint firstItem="YTp-BO-uNt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Ep-g4-Fob"/>
+                            <constraint firstItem="LDg-Xz-TUS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ArK-x9-MS2"/>
+                            <constraint firstItem="LDg-Xz-TUS" firstAttribute="leading" secondItem="YTp-BO-uNt" secondAttribute="trailing" id="I70-Li-IHg"/>
+                            <constraint firstItem="eRd-OF-Xbx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IAp-OJ-3J8"/>
+                            <constraint firstItem="YTp-BO-uNt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KhG-TO-XUP"/>
+                            <constraint firstItem="eRd-OF-Xbx" firstAttribute="top" secondItem="LDg-Xz-TUS" secondAttribute="bottom" constant="8" id="Qfr-cN-Z6c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eRd-OF-Xbx" secondAttribute="bottom" id="Tqj-71-nUw"/>
+                            <constraint firstItem="YTp-BO-uNt" firstAttribute="width" secondItem="LDg-Xz-TUS" secondAttribute="width" id="c3H-kb-oxG"/>
+                            <constraint firstAttribute="trailing" secondItem="LDg-Xz-TUS" secondAttribute="trailing" id="nrt-tY-E3i"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="leftImgVw" destination="YTp-BO-uNt" id="znf-3v-e1b"/>
+                        <outlet property="rightImgVw" destination="LDg-Xz-TUS" id="Uhk-x1-7m5"/>
+                        <outlet property="webVw" destination="eRd-OF-Xbx" id="aR1-vO-Uth"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>
